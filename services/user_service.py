@@ -112,7 +112,7 @@ class UserService:
                     'NEW_PASSWORD': new_password
                 }
             )
-
+ 
             return {
                 "access_token": response['AuthenticationResult']['AccessToken'],
                 "id_token": response['AuthenticationResult']['IdToken'],

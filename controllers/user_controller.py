@@ -70,9 +70,9 @@ class UserController:
             raise InvalidInputException("Correo electrónico y nueva contraseña son requeridos.")
         
         try:
-            self.user_service.change_password(email, new_password, session)
+            token = self.user_service.change_password(email, new_password, session)
 
-            return jsonify({"msg": "Contraseña cambiada exitosamente"}), 200
+            return jsonify({"token": token}), 200
         
         except InvalidInputException as e:
             return make_response(jsonify({"error": str(e)}), 400)
