@@ -1,6 +1,6 @@
 # routes/environment_measurements_route.py
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint
 from controllers.environment_measurements_controller import EnvironmentMeasurementsController
 from auth.decorators import auth_verfication
 

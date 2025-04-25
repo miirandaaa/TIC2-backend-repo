@@ -1,6 +1,6 @@
 # routes/people_measurements_route.py
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint
 from controllers.people_measurements_controller import PeopleMeasurementsController
 from auth.decorators import auth_verfication
 

@@ -1,6 +1,6 @@
 # routes/classroom_route.py
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint
 from controllers.classroom_controller import ClassroomController
 from auth.decorators import auth_verfication
 

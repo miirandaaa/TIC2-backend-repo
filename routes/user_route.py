@@ -1,6 +1,6 @@
 # routes/user_route.py
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint
 from controllers.user_controller import UserController
 
 """Este archivo define las rutas relacionadas con los usuarios"""
